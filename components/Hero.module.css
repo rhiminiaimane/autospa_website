@@ -13,7 +13,12 @@
   text-align: left;
   color: white;
   font-family: 'Montserrat', sans-serif;
-  margin: 6rem 2rem;
+
+  margin-top: 6rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 3rem;
+
   border-radius: 33px;
   border: 1px solid #df0008;
 }

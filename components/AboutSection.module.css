@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.about {
+  text-align: center;
+  padding: 2rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+.centerText{
+  text-align: center;
+  padding: 2rem 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aboutTitle {
+  color: #ff0000; /* Red color for the "A propos de AutoSpa" heading */
+  font-size: 1.5rem;
+  margin: 0rem 2rem;
+  font-family: 'Montserrat';
+}
+
+/* Add media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .aboutTitle {
+    text-align: center;
+    margin: 0;
+    padding: 0 1rem;
+  }
+}
+
+.aboutHeading {
+  color: #000000; /* Black color for the main heading */
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.aboutDescription {
+  color: #000000; /* Black color for the description text */
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.highlight {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.link {
+  color: #000000;
+  text-decoration: underline;
+}
