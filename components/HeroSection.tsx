@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Hero.module.css';
+import googlereviews from '../public/google-reviews.png';
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,13 +14,13 @@ const HeroSection: React.FC = () => {
         </p>
         <div className={styles.heroRating}>
           <Image 
-            src="/logo-google.jpg"
+            src={googlereviews}
             alt="Google Logo"
-            width={20}
+            width={110}
             height={20}
-            style={{ marginLeft: '8px', borderRadius: '3px' }}
+            style={{ marginLeft: '2px' }}
           />
-          ⭐⭐⭐⭐⭐ 5 (parmi +40 avis)
+           5 (parmi +40 avis)
         </div>
       </div>
     </section>
