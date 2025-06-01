@@ -1,0 +1,46 @@
+.reviewCard {
+  border: 1px solid #d3d3d3;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.quote {
+  color: #ff0000;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.reviewText {
+  font-size: 0.9rem;
+  color: #000000;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.author {
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.rating {
+  color: #ffcc00;
+}
+
+.starFilled {
+  color: #ffcc00;
+}
+
+.starEmpty {
+  color: #d3d3d3;
+}
