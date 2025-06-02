@@ -78,12 +78,15 @@
   display: inline-block;
 }
 
-@media (max-width: 768px){
-  .reviewsTitle {
-    text-align: center;
-    padding: 0%;
-  }
+
+@media (width <= 768px) {
+    .reviewsTitle{
+        text-align: center;
+        padding: 0%;
+    }
 }
+
+
 
 /* Add media queries for larger screens */
 @media (min-width: 768px) {
