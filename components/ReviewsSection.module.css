@@ -12,6 +12,8 @@
   font-weight: 700;
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  text-align: left;
+  padding-left: 2rem;
 }
 
 .sliderContainer {
@@ -74,6 +76,13 @@
   background-color: #ff0000;
   border-radius: 50%;
   display: inline-block;
+}
+
+@media (max-width: 768px){
+  .reviewsTitle {
+    text-align: center;
+    padding: 0%;
+  }
 }
 
 /* Add media queries for larger screens */

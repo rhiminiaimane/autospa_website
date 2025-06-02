@@ -21,6 +21,8 @@
 
   border-radius: 33px;
   border: 1px solid #df0008;
+  box-shadow: 0 4px 14px #0000000f;
+
 }
 
 .heroContent {

@@ -1,46 +1,75 @@
-.reviewCard {
-  border: 1px solid #d3d3d3;
-  border-radius: 8px;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 300px;
-  min-height: 350px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+.wrapper {
+  max-width: 400px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
+  border: 3px solid #d3d3d3;
+  margin: 40px auto;
+  padding: 20px;
+  position: relative;
   background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
-.quote {
-  color: #ff0000;
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-align: left;
+.wrapper::before {
+  content: '“';
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 60px;
+  color: #ff4d4d;
+  top: -30px;
+  left: 250px;
+  z-index: 0;
+  background: white;
+  padding: 5px;
 }
 
-.reviewText {
-  font-size: 0.9rem;
-  color: #000000;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  flex-grow: 1;
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
 }
 
-.author {
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  font-size: 15px;
   font-weight: 600;
-  color: #000000;
-  margin-bottom: 0.5rem;
+  padding-top: 15px;
 }
 
-.rating {
-  color: #ffcc00;
+.reviewerName {
+  color: #222;
+}
+
+.stars {
+  display: flex;
+  gap: 2px;
 }
 
 .starFilled {
-  color: #ffcc00;
+  color: #FFD700;
 }
 
 .starEmpty {
   color: #d3d3d3;
+}
+
+
+@media (max-width: 480px) {
+  .wrapper::before {
+    font-size: 50px;
+    top: -25px;
+    left: 180px;
+  }
 }

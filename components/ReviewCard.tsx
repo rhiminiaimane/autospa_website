@@ -14,11 +14,14 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ author, quote, rating }) => {
   ));
 
   return (
-    <div className={styles.reviewCard}>
-      <div className={styles.quote}>&quot;</div>
-      <p className={styles.reviewText}>{quote}</p>
-      <div className={styles.author}>{author}</div>
-      <div className={styles.rating}>{stars}</div>
+    <div className={styles.wrapper}>
+      <div className={styles.description}>
+        <p>{quote}</p>
+      </div>
+      <div className={styles.reviewHeader}>
+        <span className={styles.reviewerName}>{author}</span>
+        <span className={styles.stars}>{stars}</span>
+      </div>
     </div>
   );
 };
