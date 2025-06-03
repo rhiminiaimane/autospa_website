@@ -45,9 +45,9 @@ const Navbar: React.FC = () => {
         <Link href="/catalogue">
           SERVICES
         </Link>
-        <a onClick={() => scrollToSection('.contact-section')}>
+        <Link href="/galerie">
           GALERIE
-        </a>
+        </Link>
         <a onClick={() => scrollToSection('.contact-section')}>
           CONTACT
         </a>
