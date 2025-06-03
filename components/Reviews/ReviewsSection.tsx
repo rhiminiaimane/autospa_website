@@ -92,7 +92,7 @@ const ReviewsSection: React.FC = () => {
           aria-label="Previous reviews"
         >
           <Image 
-            src="/slider.png"
+            src="/icons/slider.png"
             alt="Previous"
             width={18}
             height={18}
@@ -116,7 +116,7 @@ const ReviewsSection: React.FC = () => {
           aria-label="Next reviews"
         >
           <Image 
-            src="/slider.png"
+            src="/icons/slider.png"
             alt="Next"
             width={18}
             height={18}

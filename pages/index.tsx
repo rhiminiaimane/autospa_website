@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import AboutSection from '@/components/AboutSection';
-import HeroSection from '@/components/HeroSection';
-import ServicesSection from '@/components/ServicesSection';
-import ReviewsSection from '@/components/ReviewsSection';
-import Footer from '@/components/Footer';
+import AboutSection from '@/components/About/AboutSection';
+import HeroSection from '@/components/Hero/HeroSection';
+import ServicesSection from '@/components/Services/ServicesSection';
+import ReviewsSection from '@/components/Reviews/ReviewsSection';
+import Footer from '@/components/Footer/Footer';
 import React from 'react';
 
 const Home: React.FC = () => {

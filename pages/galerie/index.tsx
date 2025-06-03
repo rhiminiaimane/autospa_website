@@ -3,16 +3,16 @@ import Image from 'next/image';
 import styles from './index.module.css';
 
 const galleryItems = [
-  { id: 1, model: 'BMW', Name: 'BMW M3', image: '/bmw.jpg', alt: 'Detailed BMW M3' },
-  { id: 2, model: 'Mercedes', Name: 'Mercedes-Benz C-Class', image: '/benz.jpg', alt: 'Detailed Mercedes-Benz C-Class' },
-  { id: 3, model: 'Toyota', Name: 'Toyota Camry', image: '/toyota.webp', alt: 'Detailed Toyota Camry' },
-  { id: 4, model: 'BMW', Name: 'BMW X5', image: '/bmw2.webp', alt: 'Detailed BMW X5' },
-  { id: 5, model: 'Mercedes', Name: 'Mercedes-Benz E-Class', image: '/benz2.webp', alt: 'Detailed Mercedes-Benz E-Class' },
-  { id: 6, model: 'Audi', Name: 'Audi A4', image: '/audi.jpg', alt: 'Detailed Audi A4' },
-  { id: 7, model: 'Honda', Name: 'Honda Civic', image: '/honda.webp', alt: 'Detailed Honda Civic' },
-  { id: 8, model: 'Tesla', Name: 'Tesla Model 3', image: '/tesla.jpeg', alt: 'Detailed Tesla Model 3' },
-  { id: 9, model: 'Ford', Name: 'Ford Mustang', image: '/ford.jpg', alt: 'Detailed Ford Mustang' },
-  { id: 10, model: 'Volkswagen', Name: 'Volkswagen Golf', image: '/vw.webp', alt: 'Detailed Volkswagen Golf' }
+  { id: 1, model: 'BMW', Name: 'BMW M3', image: '/cars/bmw.jpg', alt: 'Detailed BMW M3' },
+  { id: 2, model: 'Mercedes', Name: 'Mercedes-Benz C-Class', image: '/cars/benz.jpg', alt: 'Detailed Mercedes-Benz C-Class' },
+  { id: 3, model: 'Toyota', Name: 'Toyota Camry', image: '/cars/toyota.webp', alt: 'Detailed Toyota Camry' },
+  { id: 4, model: 'BMW', Name: 'BMW X5', image: '/cars/bmw2.webp', alt: 'Detailed BMW X5' },
+  { id: 5, model: 'Mercedes', Name: 'Mercedes-Benz E-Class', image: '/cars/benz2.webp', alt: 'Detailed Mercedes-Benz E-Class' },
+  { id: 6, model: 'Audi', Name: 'Audi A4', image: '/cars/audi.jpg', alt: 'Detailed Audi A4' },
+  { id: 7, model: 'Honda', Name: 'Honda Civic', image: '/cars/honda.webp', alt: 'Detailed Honda Civic' },
+  { id: 8, model: 'Tesla', Name: 'Tesla Model 3', image: '/cars/tesla.jpeg', alt: 'Detailed Tesla Model 3' },
+  { id: 9, model: 'Ford', Name: 'Ford Mustang', image: '/cars/ford.jpg', alt: 'Detailed Ford Mustang' },
+  { id: 10, model: 'Volkswagen', Name: 'Volkswagen Golf', image: '/cars/vw.webp', alt: 'Detailed Volkswagen Golf' }
 ];
 
 const Galerie: React.FC = () => {

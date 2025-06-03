@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import styles from './Hero.module.css';
-import googlereviews from '../public/google-reviews.png';
 
 const HeroSection: React.FC = () => {
   return (
@@ -13,7 +12,7 @@ const HeroSection: React.FC = () => {
         </p>
         <div className={styles.heroRating}>
           <Image 
-            src={googlereviews}
+            src="/icons/google-reviews.png"
             alt="Google Logo"
             width={110}
             height={20}

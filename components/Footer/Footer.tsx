@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <h3 className={styles.sectionTitle}>Adresse</h3>
             <Link href="/contact" passHref>
               <Image
-                src="/map-image.png"
+                src="/map.png"
                 alt="Map of Auto Spa Detailing location"
                 width={250}
                 height={250}
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
               <div className={styles.messageRapide}>
                 <div className={styles.messageContent}>
                     <Image
-                        src="/whatsapp-icon.png"
+                        src="/icons/whatsapp-icon.png"
                         alt="WhatsApp Icon"
                         width={50}
                         height={50}

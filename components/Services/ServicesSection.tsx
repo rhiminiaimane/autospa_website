@@ -31,7 +31,7 @@ const ServicesSection: React.FC = () => {
         <Link href="/services" className={styles.servicesLink}>
           Voir tous nos services 
           <Image 
-            src="/circle-arrow.png" 
+            src="/icons/circle-arrow.png" 
             alt="arrow" 
             width={20} 
             height={20}

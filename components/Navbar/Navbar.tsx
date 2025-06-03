@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './Navbar.module.css';
-import logo from '../public/logo.png'; // Adjust the path as necessary
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -31,7 +30,15 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbarLogo}>
-        <Image src={logo} alt="Sky Bois Logo" className={styles.logoImage} width={50} height={50} />
+
+        <Image 
+          src="/logos/logo.png" 
+          alt="AutoSpa Logo" 
+          className={styles.logoImage} 
+          width={50} 
+          height={50} 
+        />
+
         <span className={styles.brandName}>
           <span className={styles.mainBrand}>AutoSpa</span> 
           <span className={styles.subBrand}>Detailing</span>
