@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Hero.module.css';
 import googlereviews from '../public/google-reviews.png';
