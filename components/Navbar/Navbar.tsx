@@ -46,16 +46,22 @@ const Navbar: React.FC = () => {
       </div>
       
       <div className={`${styles.navbarLinks} ${isOpen ? styles.active : ''}`}>
-        <Link href="/" onClick={() => scrollToSection('.hero')}>
+        <Link href="/" onClick={() => {
+          scrollToSection('.hero');
+          setIsOpen(false);
+        }}>
           ACCUEIL
         </Link>
-        <Link href="/catalogue">
+        <Link href="/catalogue" onClick={() => setIsOpen(false)}>
           SERVICES
         </Link>
-        <Link href="/galerie">
+        <Link href="/galerie" onClick={() => setIsOpen(false)}>
           GALERIE
         </Link>
-        <a onClick={() => scrollToSection('.contact-section')}>
+        <a onClick={() => {
+          scrollToSection('.contact-section');
+          setIsOpen(false);
+        }}>
           CONTACT
         </a>
       </div>
