@@ -1,21 +1,42 @@
+import Head from 'next/head';
 import AboutSection from '@/components/AboutSection';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
-import React from 'react';
-import Footer from '@/components/Footer';
-
 import ReviewsSection from '@/components/ReviewsSection';
-
+import Footer from '@/components/Footer';
+import React from 'react';
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <>
+      <Head>
+        <title>Premium Car Detailing Services | AutoSpa Detailing</title>
+        <meta name="description" content="Professional car detailing services to make your vehicle look brand new. Serving English and French clients with premium care." />
+        <meta name="keywords" content="car detailing, auto detailing, interior cleaning, exterior polishing, ceramic coating, English, French" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta name="author" content="Auto Spa Detailing" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Premium Car Detailing Services" />
+        <meta property="og:description" content="High-end car detailing and polishing. Serving English and French-speaking customers." />
+        <meta property="og:url" content="https://autospa-website.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Premium Car Detailing Services" />
+        <meta name="twitter:description" content="Make your car shine again. Bilingual car detailing services." />
+        <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+      </Head>
+
       <HeroSection />
       <AboutSection />
       <ServicesSection />
       <ReviewsSection />
       <Footer />
-    </div>
+    </>
   );
 };
 
