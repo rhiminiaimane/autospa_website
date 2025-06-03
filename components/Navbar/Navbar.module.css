@@ -53,6 +53,7 @@
   transition: all 0.3s ease;
   position: relative;
   padding: 0.5rem 0;
+  cursor: pointer;
 }
 
 .navbarLinks a:hover {

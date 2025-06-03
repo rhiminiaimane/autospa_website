@@ -35,7 +35,7 @@ const Home: React.FC = () => {
       <AboutSection />
       <ServicesSection />
       <ReviewsSection />
-      <Footer />
+      <Footer id="contact" />
     </>
   );
 };

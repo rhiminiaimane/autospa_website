@@ -2,9 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  id?: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ id }) => {
   return (
-    <footer className={styles.footer}>
+    <footer id={id} className={styles.footer}>
       <div className={styles.footerContainer}>
         <div className={styles.contentWrapper}>
           {/* Map Section */}

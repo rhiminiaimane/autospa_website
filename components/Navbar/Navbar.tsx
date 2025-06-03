@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import styles from './Navbar.module.css';
 
 const Navbar: React.FC = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
@@ -25,6 +27,19 @@ const Navbar: React.FC = () => {
       element.scrollIntoView({ behavior: 'smooth' });
       setIsOpen(false);
     }
+  };
+
+  const handleContactClick = async () => {
+    if (router.pathname !== '/') {
+      await router.push('/');
+      // Wait for the navigation to complete
+      setTimeout(() => {
+        scrollToSection('#contact');
+      }, 100);
+    } else {
+      scrollToSection('#contact');
+    }
+    setIsOpen(false);
   };
 
   return (
@@ -58,10 +73,7 @@ const Navbar: React.FC = () => {
         <Link href="/galerie" onClick={() => setIsOpen(false)}>
           GALERIE
         </Link>
-        <a onClick={() => {
-          scrollToSection('.contact-section');
-          setIsOpen(false);
-        }}>
+        <a onClick={handleContactClick}>
           CONTACT
         </a>
       </div>
