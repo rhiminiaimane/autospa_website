@@ -78,6 +78,13 @@
   display: inline-block;
 }
 
+.prevArrow {
+  transform: rotate(180deg);
+}
+
+.nextArrow {
+  transform: rotate(0deg);
+}
 
 @media (width <= 768px) {
     .reviewsTitle{
@@ -85,8 +92,6 @@
         padding: 0%;
     }
 }
-
-
 
 /* Add media queries for larger screens */
 @media (min-width: 768px) {

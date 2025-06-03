@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import ReviewCard from './ReviewCard';
 import styles from './ReviewsSection.module.css';
 
@@ -90,7 +91,13 @@ const ReviewsSection: React.FC = () => {
           className={styles.sliderButton}
           aria-label="Previous reviews"
         >
-          ←
+          <Image 
+            src="/slider.png"
+            alt="Previous"
+            width={18}
+            height={18}
+            className={styles.prevArrow}
+          />
         </button>
         <div className={styles.cardsContainer}>
           {currentReviews.map((review, index) => (
@@ -108,7 +115,13 @@ const ReviewsSection: React.FC = () => {
           className={styles.sliderButton}
           aria-label="Next reviews"
         >
-          →
+          <Image 
+            src="/slider.png"
+            alt="Next"
+            width={18}
+            height={18}
+            className={styles.nextArrow}
+          />
         </button>
       </div>
       <div className={styles.pagination}>

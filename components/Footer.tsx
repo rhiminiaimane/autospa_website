@@ -45,17 +45,17 @@ const Footer: React.FC = () => {
               </div>
                 <div className={styles.verticalDivider}></div>
               <div className={styles.messageRapide}>
-                <div>
+                <div className={styles.messageContent}>
                     <Image
-                    src="/whatsapp-icon.png"
-                    alt="WhatsApp Icon"
-                    width={50}
-                    height={50}
+                        src="/whatsapp-icon.png"
+                        alt="WhatsApp Icon"
+                        width={50}
+                        height={50}
                     />
                     <h3>Contact Rapide</h3>
                     <p>Message direct sur WhatsApp</p>  
                     <a href='' className={styles.whatsappBtn}>
-                    Nous Ecrire
+                        Nous Ecrire
                     </a>
                 </div>
               </div>
