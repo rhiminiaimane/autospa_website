@@ -1,0 +1,176 @@
+/* Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Main Footer Layout */
+.footer {
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 3rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Optional: only if vertical centering is desired */
+  flex-direction: column; /* Maintains vertical layout */
+}
+
+
+
+/* Section Cards */
+
+
+/* Images and Media */
+.mapImage {
+  border-radius: 33px;
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+  margin-top: 0.5rem;
+  border: 1px solid #ffffff;
+}
+
+.messageRapide {
+  border-radius: 33px;
+  object-fit: cover;
+  width: 300px;
+  height: 250px;
+  margin-top: 0.5rem;
+  border: 1px solid #ffffff;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+/* Titles */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: white;
+}
+.messageContent{
+  margin: 5px;
+}
+
+.centeredTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* Contact Section */
+
+.contactWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 55px;
+}
+
+.contactItem {
+  display: flex;
+  text-align: left;
+  font-size: 1rem;
+  gap: 0.5rem;
+  margin: 5px;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+.contactLink {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+/* WhatsApp Section*/
+
+
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+.whatsappText {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.whatsappSubtext {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Styles */
+.contentWrapper {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+.verticalDivider {
+  width: 1px;
+  background-color: #e0e0e0;
+  align-self: stretch;
+  margin: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .verticalDivider {
+    display: none;
+  }
+}
+
+
+/* Add a media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .contactWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+
+  .whatsappBtn {
+    width: 100%;
+    justify-content: center;
+  }
+}

@@ -3,6 +3,7 @@ import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import Link from 'next/link';
 import React from 'react';
+import Footer from '@/components/Footer';
 
 import ReviewsSection from '@/components/ReviewsSection';
 
@@ -14,6 +15,7 @@ const Home: React.FC = () => {
       <AboutSection />
       <ServicesSection />
       <ReviewsSection />
+      <Footer />
     </div>
   );
 };
