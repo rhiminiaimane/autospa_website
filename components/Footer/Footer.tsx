@@ -14,7 +14,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
           {/* Map Section */}
           <div className={styles.card}>
             <h3 className={styles.sectionTitle}>Adresse</h3>
-            <Link href="/contact" passHref>
+            <Link href="https://maps.app.goo.gl/u2n2Zmx6K9zHhju2A" passHref target="_blank">
               <Image
                 src="/map.png"
                 alt="Map of Auto Spa Detailing location"
@@ -32,17 +32,38 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
                 <div className={styles.verticalDivider}></div>
               <div className={styles.contactDetails}>
                 <p className={styles.contactItem}>
-                  <span className={styles.icon}>📷</span>
+                  <span className={styles.icon}>
+                    <Image
+                      src="/icons/instagram-icon.png"
+                      alt="Instagram Icon"
+                      width={20}
+                      height={20}
+                    />
+                  </span>
                   <Link href="https://www.instagram.com/auto_spa_detailing_sarl" target="_blank" className={styles.contactLink}>
                     @auto_spa_detailing_sarl
                   </Link>
                 </p>
                 <p className={styles.contactItem}>
-                  <span className={styles.icon}>📞</span>
+                  <span className={styles.icon}>
+                    <Image
+                      src="/icons/whatsapp-icon-w.png"
+                      alt="Phone Icon"
+                      width={20}
+                      height={20}
+                    />
+                  </span>
                   06 62 03 80 56
                 </p>
                 <p className={styles.contactItem}>
-                  <span className={styles.icon}>🕒</span>
+                  <span className={styles.icon}>
+                    <Image
+                      src="/icons/clock-icon.png"
+                      alt="Clock Icon"
+                      width={20}
+                      height={20}
+                    />
+                  </span>
                   Lundi - Vendredi: 9H - 19H<br/>
                   Samedi: 10H - 18H
                 </p>
@@ -58,7 +79,14 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
                     />
                     <h3>Contact Rapide</h3>
                     <p>Message direct sur WhatsApp</p>  
-                    <a href='' className={styles.whatsappBtn}>
+                    <a 
+                        href={`https://wa.me/+212639607843?text=${encodeURIComponent(
+                            "Bonjour Auto Spa Detailing, je souhaite prendre rendez-vous."
+                        )}`} 
+                        className={styles.whatsappBtn}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Nous Ecrire
                     </a>
                 </div>

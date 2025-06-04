@@ -4,8 +4,9 @@ import styles from './Services.module.css';
 const packs = [
   {
     title: 'Pack Maintenance',
-    price: '120 DH',
-    description: 'Un nettoyage complet pour redonner de l’éclat à votre voiture, idéal pour un entretien régulier.',
+    price: { amount: '120', currency: 'DH' },
+    description:
+      "Un nettoyage complet pour redonner de l'éclat à votre voiture, idéal pour un entretien régulier.",
     features: [
       'Lavage extérieur à la main et séchage',
       'Nettoyage des jantes et pneus',
@@ -16,12 +17,12 @@ const packs = [
       'Conditionnement des plastiques intérieurs',
     ],
     buttonText: 'Réserver Maintenant',
-    buttonLink: '/book-maintenance',
   },
   {
     title: 'Pack Platinum',
-    price: '320 DH',
-    description: 'Une désinfection avancée et un polissage brillant pour une propreté durable et une protection renforcée.',
+    price: { amount: '320', currency: 'DH' },
+    description:
+      'Une désinfection avancée et un polissage brillant pour une propreté durable et une protection renforcée.',
     features: [
       'Désinfection du volant et du levier de vitesse',
       'Aspiration de la poussière et protection du tableau de bord et des portières',
@@ -33,12 +34,12 @@ const packs = [
       'Brillance de la carrosserie',
     ],
     buttonText: 'Réserver Maintenant',
-    buttonLink: '/book-platinum',
   },
   {
     title: 'Pack Diamond',
-    price: '760 DH',
-    description: 'Un soin luxueux avec traitement du cuir et protection anti-saleté pour une voiture impeccable.',
+    price: { amount: '760', currency: 'DH' },
+    description:
+      'Un soin luxueux avec traitement du cuir et protection anti-saleté pour une voiture impeccable.',
     features: [
       'Désinfection du volant et du levier de vitesse',
       'Aspiration de la poussière et protection du tableau de bord et des portières',
@@ -52,12 +53,12 @@ const packs = [
       'Protection plastique (protection UV, contre la détérioration et la saleté avec effet neuf)',
     ],
     buttonText: 'Réserver Maintenant',
-    buttonLink: '/book-diamond',
   },
   {
     title: 'Pack Titanium',
-    price: '1320 DH',
-    description: 'Le summum du soin auto avec polissage chimique et cire premium pour une finition parfaite.',
+    price: { amount: '1320', currency: 'DH' },
+    description:
+      'Le summum du soin auto avec polissage chimique et cire premium pour une finition parfaite.',
     features: [
       'Désinfection du volant et du levier de vitesse',
       'Aspiration de la poussière et protection du tableau de bord et des portières',
@@ -74,29 +75,74 @@ const packs = [
       'Application de cire premium',
     ],
     buttonText: 'Réserver Maintenant',
-    buttonLink: '/book-titanium',
   },
 ];
+
 const Services: React.FC = () => {
+  const handleWhatsAppClick = (packTitle: string) => {
+    const message = `Bonjour Auto Spa Detailing, je souhaite réserver le ${packTitle}.`;
+    const whatsappUrl = `https://wa.me/+212639607843?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  };
+
+  const getExtraFeatures = (current: string[], base: string[]) =>
+    current.filter((feature) => !base.includes(feature));
+
+  const platinumFeatures =
+    packs.find((p) => p.title === 'Pack Platinum')?.features || [];
+  const diamondFeatures =
+    packs.find((p) => p.title === 'Pack Diamond')?.features || [];
+
   return (
-    <div className={styles.pricing}>
-      {/*<h1 className={styles.title}>Pricing Packs</h1>*/}
-      <div className={styles.cards}>
-        {packs.map((plan, index) => (
-          <div key={index} className={styles.card}>
-            <h2 className={styles.planTitle}>{plan.title}</h2>
-            <p className={styles.price}>{plan.price}</p>
-            <p className={styles.description}>{plan.description}</p>
-            <ul className={styles.features}>
-              {plan.features.map((feature, idx) => (
-                <li key={idx} className={styles.feature}>{feature}</li>
-              ))}
-            </ul>
-            <Link href={plan.buttonLink} className={styles.button}>
-              {plan.buttonText}
-            </Link>
-          </div>
-        ))}
+    <div>
+      <h1 className={styles.title}>Nos Packs de Services</h1>
+      <div className={styles.pricing}>
+        <div className={styles.cards}>
+          {packs.map((plan, index) => {
+            let baseFeatures: string[] = [];
+            if (plan.title === 'Pack Diamond') {
+              baseFeatures = platinumFeatures;
+            } else if (plan.title === 'Pack Titanium') {
+              baseFeatures = diamondFeatures;
+            }
+
+            const extraFeatures = getExtraFeatures(plan.features, baseFeatures);
+
+            return (
+              <div key={index} className={styles.card}>
+                <h2 className={styles.planTitle}>{plan.title}</h2>
+                <p className={styles.price}>
+                  <span className={styles.startingFrom}>à partir de </span>
+                  {plan.price.amount}
+                  <span className={styles.currency}>{plan.price.currency}</span>
+                </p>
+                <p className={styles.description}>{plan.description}</p>
+                <div className={styles.divider}></div>
+                <ul className={styles.features}>
+                  {plan.features.map((feature, idx) => {
+                    const isExtra = extraFeatures.includes(feature);
+                    return (
+                      <li
+                        key={idx}
+                        className={`${styles.feature} ${
+                          isExtra ? styles.extraFeature : ''
+                        }`}
+                      >
+                        {feature}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <button
+                  onClick={() => handleWhatsAppClick(plan.title)}
+                  className={styles.button}
+                >
+                  {plan.buttonText}
+                </button>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

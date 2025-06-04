@@ -9,6 +9,7 @@
   margin: 40px auto;
   padding: 20px;
   position: relative;
+  padding-top: 40px;  /* Added to give space for the quote */
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
@@ -16,14 +17,14 @@
 }
 
 .wrapper::before {
-  content: '“';
+  content: '"';
   position: absolute;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 60px;
   color: #ff4d4d;
-  top: -30px;
-  left: 250px;
+  top: -32px;
+  right: 15%;  /* Changed from left positioning */
   z-index: 0;
   background: white;
   padding: 5px;
@@ -68,8 +69,8 @@
 
 @media (max-width: 480px) {
   .wrapper::before {
-    font-size: 50px;
-    top: -25px;
-    left: 180px;
+    font-size: 60px;  /* Keep font size consistent */
+    top: -32px;       /* Keep position consistent */
+    right: 15%;       /* Keep position consistent */
   }
 }

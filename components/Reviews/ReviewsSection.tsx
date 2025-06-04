@@ -54,12 +54,16 @@ const reviews: Review[] = [
 
 const ReviewsSection: React.FC = () => {
   const [currentPage, setCurrentPage] = useState<number>(0);
-  const [reviewsPerPage, setReviewsPerPage] = useState<number>(2);
+  const [reviewsPerPage, setReviewsPerPage] = useState<number>(3);
 
-  // Add useEffect to handle responsive behavior
+  // Update useEffect to handle responsive behavior
   useEffect(() => {
     const handleResize = () => {
-      setReviewsPerPage(window.innerWidth < 768 ? 1 : 2);
+      if (window.innerWidth < 768) {
+        setReviewsPerPage(1);
+      } else {
+        setReviewsPerPage(3);
+      }
     };
 
     handleResize(); // Set initial value
