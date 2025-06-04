@@ -5,16 +5,19 @@ import styles from './ServicesSection.module.css';
 
 const services = [
   {
-    title: 'Protection Céramique',
-    description: 'Le texte généré est du pseudo latin et peut donner l\'impression d\'être du vrai texte.',
+    title: 'Pack Maintenance',
+    description: 'Nettoyage approfondi extérieur et intérieur avec polissage et soin des pneus.',
+    imageUrl: '/cars/maintenance-pack.webp',
   },
   {
-    title: 'Application de Film PPF',
-    description: 'Le texte généré est du pseudo latin et peut donner l\'impression d\'être du vrai texte.',
+    title: 'Pack Platinum',
+    description: "Désinfection complète de l'habitacle, polissage brillant et protection des surfaces.",
+    imageUrl: '/cars/platinum-pack.avif',
   },
   {
-    title: 'Correction de Peinture',
-    description: 'Le texte généré est du pseudo latin et peut donner l\'impression d\'être du vrai texte.',
+    title: 'Pack Diamond',
+    description: 'Désinfection avancée, polissage premium, traitement du cuir et protection anti-saleté.',
+    imageUrl: '/cars/diamond-pack.jpg',
   },
 ];
 
@@ -24,7 +27,12 @@ const ServicesSection: React.FC = () => {
       <h2 className={styles.servicesTitle}>Notre service</h2>
       <div className={styles.cardsContainer}>
         {services.map((service, index) => (
-          <ServiceCard key={index} title={service.title} description={service.description} />
+          <ServiceCard 
+            key={index} 
+            title={service.title} 
+            description={service.description}
+            imageUrl={service.imageUrl}
+          />
         ))}
       </div>
       <div className={styles.linkContainer}>

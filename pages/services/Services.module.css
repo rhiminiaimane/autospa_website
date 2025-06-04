@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.pricing {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  max-height: 300vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 45px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #00000029;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 450px; /* Add a minimum height to maintain some consistency */
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.planTitle {
+    color: white;
+    text-align: left;
+    margin-bottom: .4rem;
+    font-size: 1.2rem;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 9px;
+    width: auto;
+    max-width: fit-content;
+    background-color: red;
+    font-weight: 500;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff0000;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  height: 80px;
+  flex-grow: 1; /* Allows description to grow within the card */
+  overflow: auto; /* Enables scrolling if content is too long */
+  text-align: left;
+}
+
+/* Add custom scrollbar styling (optional) */
+.description::-webkit-scrollbar {
+  width: 4px;
+}
+
+.description::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.description::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.features {
+  margin-top: auto;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.feature {
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.feature::before {
+  content: '✔ ';
+  color: #008000;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #333;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #1a1a52;
+}
