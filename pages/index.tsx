@@ -5,6 +5,13 @@ import ServicesSection from '@/components/Services/ServicesSection';
 import ReviewsSection from '@/components/Reviews/ReviewsSection';
 import Footer from '@/components/Footer/Footer';
 import React from 'react';
+// pages/index.tsx or wherever you're using RevealWrapper
+import dynamic from 'next/dynamic';
+
+const RevealWrapper = dynamic(() => import('next-reveal').then(mod => mod.RevealWrapper), {
+  ssr: false,
+});
+
 
 const Home: React.FC = () => {
   return (
@@ -32,10 +39,20 @@ const Home: React.FC = () => {
       </Head>
 
       <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ReviewsSection />
-      <Footer id="contact" />
+      <RevealWrapper>
+        <AboutSection />
+      </RevealWrapper>
+      
+      <RevealWrapper>
+        <ServicesSection />
+      </RevealWrapper>
+      <RevealWrapper>
+        <ReviewsSection />
+      </RevealWrapper>
+      <RevealWrapper>
+        <Footer id="contact" />
+      </RevealWrapper>
+      
     </>
   );
 };
