@@ -73,9 +73,11 @@ const Navbar: React.FC = () => {
         <Link href="/galerie" onClick={() => setIsOpen(false)}>
           GALERIE
         </Link>
-        <a onClick={handleContactClick}>
+
+        <Link href="/#contact" onClick={handleContactClick}>
           CONTACT
-        </a>
+        </Link>
+
       </div>
 
       <div 
