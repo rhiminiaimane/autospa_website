@@ -10,8 +10,8 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Premium Car Detailing Services | AutoSpa Detailing</title>
-        <meta name="description" content="Professional car detailing services to make your vehicle look brand new. Serving English and French clients with premium care." />
+        <title>Services de Detailing Auto de Luxe | AutoSpa Detailing</title>
+        <meta name="description" content="Des services professionnels de detailing automobile pour redonner à votre véhicule son éclat d'origine. Nous servons nos clients en français avec un soin premium." />
         <meta name="keywords" content="car detailing, auto detailing, interior cleaning, exterior polishing, ceramic coating, English, French" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
