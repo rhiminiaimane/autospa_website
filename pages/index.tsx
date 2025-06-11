@@ -30,11 +30,13 @@ const Home: React.FC = () => {
         <meta name="twitter:description" content="Make your car shine again. Bilingual car detailing services." />
         <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
       </Head>
-
-      <HeroSection />
-      <AboutSection />
-      <ServicesSection />
-      <ReviewsSection />
+      <div style={{ backgroundColor: "#f5f5f5" }}>
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <ReviewsSection />
+      </div>
+      
       <Footer id="contact" />
     </>
   );
