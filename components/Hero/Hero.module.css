@@ -48,6 +48,10 @@
   gap: 8px;
 }
 
+.welcomeText {
+  color: #014AAC;
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .hero {

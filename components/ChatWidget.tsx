@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import Image from 'next/image';
 import styles from './ChatWidget.module.css';
 
 const ChatWidget: React.FC = () => {
@@ -14,7 +14,6 @@ const ChatWidget: React.FC = () => {
       rel="noopener noreferrer"
       aria-label="Chat on WhatsApp"
     >
-      <FaWhatsapp />
     </a>
   );
 };

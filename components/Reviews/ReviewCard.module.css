@@ -12,7 +12,7 @@
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
-  box-shadow: 0 0 14px #0000000f;
+  box-shadow: 0 0 14px #00000005;
 }
 
 .wrapper::before {
