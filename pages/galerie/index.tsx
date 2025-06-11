@@ -93,7 +93,8 @@ const Galerie: React.FC = () => {
 };
 
   return (
-    <div className={styles.gallery}>
+    <div className={styles.container}>
+      <div className={styles.gallery}>
       <div 
         className={styles.mainImage} 
         ref={mainImageRef}
@@ -148,6 +149,8 @@ const Galerie: React.FC = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 
