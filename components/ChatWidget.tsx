@@ -3,8 +3,8 @@ import styles from './ChatWidget.module.css';
 import Image from 'next/image';
 
 const ChatWidget: React.FC = () => {
-  const phoneNumber = "51955081075";
-  const message = "Hola! Quisiera más información.";
+  const phoneNumber = "212639607843";
+  const message = "Bonjour Auto Spa Detailing, je souhaite prendre rendez-vous.";
 
   return (
     <a
