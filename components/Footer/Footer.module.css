@@ -2,9 +2,9 @@
 
 /* Main Footer Layout */
 .footer {
-  background-color: #ff0000;
+  background-color: #014AAC;
   color: #ffffff;
-  padding: 3rem 2rem;
+  padding: 2rem 2rem;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
 .contentWrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
   align-items: flex-start;
   justify-content: center;
 }
@@ -36,12 +36,12 @@
   object-fit: cover;
   width: 100%;
   max-width: 300px;
-  border: 1px solid #ffffff;
+  border: 1px solid #f8ad19;
 }
 
 .messageRapide {
   border-radius: 33px;
-  border: 1px solid #ffffff;
+  border: 1px solid #f8ad19;
   background-color: white;
   color: black;
   max-width: 300px;

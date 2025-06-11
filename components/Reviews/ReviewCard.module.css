@@ -5,7 +5,6 @@
   min-height: 377px;
   display: flex;
   flex-direction: column;
-  border: 3px solid #d3d3d3;
   margin: 40px auto;
   padding: 20px;
   position: relative;
@@ -13,7 +12,7 @@
   background-color: #ffffff;
   font-family: 'Montserrat', sans-serif;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 14px #0000000f;
 }
 
 .wrapper::before {
@@ -22,11 +21,10 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 60px;
-  color: #ff4d4d;
+  color: #014AAC;
   top: -32px;
   right: 15%;  /* Changed from left positioning */
   z-index: 0;
-  background: white;
   padding: 5px;
 }
 
@@ -50,7 +48,7 @@
 }
 
 .reviewerName {
-  color: #222;
+  color: #014AAC;
 }
 
 .stars {

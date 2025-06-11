@@ -13,16 +13,12 @@
   text-align: left;
   color: white;
   font-family: 'Montserrat', sans-serif;
-
   margin-top: 6rem;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 3rem;
-
   border-radius: 33px;
-  border: 1px solid #df0008;
-  box-shadow: 0 4px 14px #0000000f;
-
+  box-shadow: 0 0 14px #0000000f;
 }
 
 .heroContent {

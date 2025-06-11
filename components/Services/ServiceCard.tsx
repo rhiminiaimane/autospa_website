@@ -4,7 +4,7 @@ import Image from 'next/image';
 interface ServiceCardProps {
   title: string;
   description: string;
-  imageUrl: string; // Add this new prop
+  imageUrl: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl }) => {
