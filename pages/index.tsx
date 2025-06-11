@@ -5,7 +5,6 @@ import ServicesSection from '@/components/Services/ServicesSection';
 import ReviewsSection from '@/components/Reviews/ReviewsSection';
 import Footer from '@/components/Footer/Footer';
 import React from 'react';
-import '@/styles/globals.css';  // Change this line
 
 const Home: React.FC = () => {
   return (
