@@ -93,7 +93,7 @@ const Services: React.FC = () => {
     packs.find((p) => p.title === 'Pack Diamond')?.features || [];
 
   return (
-    <div>
+    <div className={styles.container}>
       <h1 className={styles.title}>Nos Packs de Services</h1>
       <div className={styles.pricing}>
         <div className={styles.cards}>
