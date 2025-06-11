@@ -5,7 +5,7 @@
   min-height: 377px;
   display: flex;
   flex-direction: column;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 20px;
   position: relative;
   padding-top: 40px;  /* Added to give space for the quote */
@@ -22,7 +22,7 @@
   font-weight: 800;
   font-size: 60px;
   color: #014AAC;
-  top: -32px;
+  top: -38px;
   right: 15%;  /* Changed from left positioning */
   z-index: 0;
   padding: 5px;
@@ -68,7 +68,7 @@
 @media (max-width: 480px) {
   .wrapper::before {
     font-size: 60px;  /* Keep font size consistent */
-    top: -32px;       /* Keep position consistent */
+    top: -38px;       /* Keep position consistent */
     right: 15%;       /* Keep position consistent */
   }
 }

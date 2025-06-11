@@ -45,14 +45,15 @@
 .cardTitle {
   font-size: 1.1rem;
   font-weight: 700;
-  color: #333;
+  color: #014AAC;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
+  margin-top: 1rem;
 }
 
 .cardDescription {
   font-size: 0.95rem;
-  color: #444;
+  color: #023b86cc;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }

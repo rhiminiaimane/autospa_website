@@ -5,6 +5,7 @@ import ServicesSection from '@/components/Services/ServicesSection';
 import ReviewsSection from '@/components/Reviews/ReviewsSection';
 import Footer from '@/components/Footer/Footer';
 import React from 'react';
+import '@/styles/globals.css';  // Change this line
 
 const Home: React.FC = () => {
   return (
@@ -30,7 +31,7 @@ const Home: React.FC = () => {
         <meta name="twitter:description" content="Make your car shine again. Bilingual car detailing services." />
         <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
       </Head>
-      <div style={{ backgroundColor: "#f5f5f5", margin: 0, padding: 0 }}>
+      <div>
         <HeroSection />
         <AboutSection />
         <ServicesSection />

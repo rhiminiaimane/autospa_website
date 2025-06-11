@@ -3,7 +3,8 @@ import styles from './Hero.module.css';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.container}>
+      <div className={styles.hero}>
       <div className={styles.heroContent}>
         <p className={styles.heroTitle}><strong>Bienvenue</strong> à AutoSpa Detailing</p><br />
         <p className={styles.heroDescription}>
@@ -20,6 +21,7 @@ const HeroSection: React.FC = () => {
           />
            5 (parmi +40 avis)
         </div>
+      </div>
       </div>
     </section>
   );

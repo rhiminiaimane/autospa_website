@@ -72,7 +72,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
               <div className={styles.messageRapide}>
                 <div className={styles.messageContent}>
                     <Image
-                        src="/icons/whatsapp-icon.png"
+                        src="/icons/whatsapp.png"
                         alt="WhatsApp Icon"
                         width={50}
                         height={50}

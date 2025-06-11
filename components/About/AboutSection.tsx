@@ -2,7 +2,7 @@ import styles from './AboutSection.module.css';
 
 const AboutSection: React.FC = () => {
   return (
-    <section>
+    <section className={styles.aboutSection}>
       <h2 className={styles.aboutTitle}>A propos de AutoSpa</h2>
       <div className={styles.centerText}>
         <p className={styles.aboutHeading}>
