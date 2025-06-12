@@ -1,13 +1,13 @@
-import styles from './ServiceCard.module.css';
+import styles from './PackCard.module.css';
 import Image from 'next/image';
 
-interface ServiceCardProps {
+interface PackCardProps {
   title: string;
   description: string;
   imageUrl: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl }) => {
+const PackCard: React.FC<PackCardProps> = ({ title, description, imageUrl }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -25,4 +25,4 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, imageUrl 
   );
 };
 
-export default ServiceCard;
+export default PackCard;

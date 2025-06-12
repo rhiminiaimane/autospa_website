@@ -1,32 +1,37 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import ServiceCard from './ServiceCard';
-import styles from './ServicesSection.module.css';
+import ServiceCard from './PackCard';
+import styles from './PackSection.module.css';
 
-const services = [
+const packs = [
   {
     title: 'Pack Maintenance',
-    description: 'Nettoyage approfondi extérieur et intérieur avec polissage et soin des pneus.',
+    description: 'Un nettoyage complet, idéal pour un entretien régulier et garder votre véhicule toujours propre.',
     imageUrl: '/cars/maintenance-pack.webp',
   },
   {
     title: 'Pack Platinum',
-    description: "Désinfection complète de l'habitacle, polissage brillant et protection des surfaces.",
+    description: "Un service plus approfondi avec désinfection intérieure et brillance carrosserie pour une propreté durable.",
     imageUrl: '/cars/platinum-pack.avif',
   },
   {
     title: 'Pack Diamond',
-    description: 'Désinfection avancée, polissage premium, traitement du cuir et protection anti-saleté.',
+    description: 'Un soin luxueux avec traitement du cuir ou tissu et protection contre la saleté et les UV.',
     imageUrl: '/cars/diamond-pack.jpg',
+  },
+  {
+    title: 'Pack Titanium',
+    description: "Le pack ultime pour les passionnés d’automobile : polissage + cire premium pour une finition miroir.",
+    imageUrl: '/cars/titanium-pack.jpg',
   },
 ];
 
-const ServicesSection: React.FC = () => {
+const PackSection: React.FC = () => {
   return (
     <section className={styles.services}>
-      <h2 className={styles.servicesTitle}>Notre service</h2>
+      <h2 className={styles.servicesTitle}>Notre Packs</h2>
       <div className={styles.cardsContainer}>
-        {services.map((service, index) => (
+        {packs.map((service, index) => (
           <ServiceCard 
             key={index} 
             title={service.title} 
@@ -37,7 +42,7 @@ const ServicesSection: React.FC = () => {
       </div>
       <div className={styles.linkContainer}>
         <Link href="/services" className={styles.servicesLink}>
-          Voir tous nos services 
+          Voir plus de details 
           <Image 
             src="/icons/circle-arrow.png" 
             alt="arrow" 
@@ -51,4 +56,4 @@ const ServicesSection: React.FC = () => {
   );
 };
 
-export default ServicesSection;
+export default PackSection;
