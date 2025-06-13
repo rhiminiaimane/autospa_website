@@ -20,16 +20,18 @@ const ServiceSection: React.FC = () => {
   return (
     <section className={styles.services}>
       <h2 className={styles.servicesTitle}>Notre Services</h2>
-      <div className={styles.cardsContainer}>
-        {services.map((service, index) => (
-          <ServiceCard 
-            key={index} 
-            title={service.title} 
-            description={service.description}
-            imageUrl={service.imageUrl}
-          />
-        ))}
-      </div>
+      <Link href="/services">
+        <div className={styles.cardsContainer}>
+          {services.map((service, index) => (
+            <ServiceCard 
+              key={index} 
+              title={service.title} 
+              description={service.description}
+              imageUrl={service.imageUrl}
+            />
+          ))}
+        </div>
+      </Link>
       <div className={styles.linkContainer}>
         <Link href="/services" className={styles.servicesLink}>
           Voir plus de details 
