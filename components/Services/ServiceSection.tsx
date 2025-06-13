@@ -5,12 +5,12 @@ import styles from './Services.module.css';
 
 const services = [
     {
-        title: 'Revêtement Céramique 9H',
+        title: 'Protection Nano Céramique',
         description: 'Protection longue durée contre les rayons UV, la pluie acide, la pollution et plus encore. Finition ultra brillante et protection jusqu’à 5 ans.',
         imageUrl: '/cars/ceramic-protect-9h2.jpg',
     },
     {
-        title: 'Film de Protection (PPF)',
+        title: 'Film de protection de peinture',
         description: 'Préservez votre peinture contre les éclats de pierre, rayures et agressions extérieures avec un film invisible et ultra résistant.',
         imageUrl: '/cars/ppf2.jpg',
     },

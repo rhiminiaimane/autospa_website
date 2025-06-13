@@ -4,101 +4,19 @@
   background-color: #f5f5f5;
   font-family: 'Montserrat', sans-serif;
   color: #333;
-  padding-top: 4rem;
-}
-
-.serviceSection {
-  padding-top: 40px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-bottom: 60px;
-}
-
-.serviceContent {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 50px;
-}
-
-@media (min-width: 992px) {
-  .serviceContent {
-    flex-direction: row;
-  }
-}
-
-.textBlock {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.textBlock h2 {
-  font-size: 40px;
-  color: #014AAC;
-  margin-bottom: 20px;
-}
-
-.textBlock p {
-  font-size: 18px;
-  line-height: 1.6;
-  margin-bottom: 30px;
-}
-
-.pricingContainer {
-  display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.pricing, .extras {
-  flex: 1;
-  background-color: #f5f5f5;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.pricing h3, .extras h3 {
-  margin-bottom: 15px;
-  color: #014AAC;
-}
-
-.pricing ul, .extras ul {
-  list-style: none;
-  padding: 0;
-  font-size: 16px;
-}
-
-.imageBlock {
-  flex: 1;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 40px rgba(0,0,0,0.15);
-  transition: transform 0.3s ease;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  padding: 8rem 1rem 5rem 1rem;
 }
 
 .buttonGroup {
-  max-width: 1200px;
-  margin: 0 auto;
   display: flex;
-  gap: 10px;
-  margin-top: 5rem;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .toggleButton {
-  flex: 1;
-  padding: 12px 20px;
+  padding: 12px 30px;
   font-size: 16px;
   font-weight: 600;
   border: 2px solid #014AAC;
@@ -119,17 +37,177 @@
   color: #fff;
 }
 
-/* Make it responsive for mobile devices */
-@media (max-width: 768px) {
-  .pricingContainer {
-    flex-direction: column;
-    gap: 1rem;
+.introText {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.introText h2 {
+  font-size: 32px;
+  color: #014AAC;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.introText p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 2rem;
+}
+
+.pricingCard {
+  background-color: #fff;
+  border: 2px solid #eaeaea;
+  border-radius: 16px;
+  box-shadow: 0 0 14px #00000005;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pricingCard:hover {
+  transform: translateY(-10px);
+}
+
+.carImageContainer img {
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 0 14px #00000005;
+
+  width: 100%;
+  height: 200px;
+}
+
+.carLabel {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  text-align: center;
+  color: #014AAC;
+}
+
+.priceLine {
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.price {
+  color: #f8ad19;
+}
+
+.extraInfo p {
+  font-size: 14px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.advantages {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 14px #00000005;
+  border: 2px solid #eaeaea;
+  max-width: 960px;
+  margin: 0 auto 4rem auto;
+}
+
+.advantages h3 {
+  color: #014AAC;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.advantages ul {
+  list-style: none;
+  padding: 0;
+}
+
+.advantages ul li {
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.advantages ul li::before {
+  content: '✔';
+  color: #f8ad19;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.extraSection {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 0 14px #00000005;
+  border: 2px solid #eaeaea;
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  text-align: center;
+}
+
+.sectionTitle {
+  color: #014AAC;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.extraItems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.extraItem {
+  border-radius: 8px;
+  width: 150px;
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .pricingCard {
+    width: 90%;
   }
-  .pageContainer {
-    padding: 2rem;
+  .extraItem {
+    width: 120px;
   }
-  .buttonGroup {
-    flex-direction: column;
-    gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .introText h2 {
+    font-size: 26px;
+  }
+  .introText p {
+    font-size: 16px;
+  }
+  .advantages h3 {
+    font-size: 20px;
+  }
+  .sectionTitle {
+    font-size: 20px;
   }
 }
