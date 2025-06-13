@@ -13,7 +13,7 @@
   font-weight: 700;
   margin-bottom: 2rem;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 4rem;
 }
 
 .cardsContainer {
@@ -44,6 +44,7 @@
   text-decoration: none;
   color: #014AAC;
   font-weight: 700;
+  padding-right: 4rem;
 }
 
 .arrow {
@@ -68,4 +69,8 @@
   .servicesLink {
     font-size: 0.8rem;
   }
+  .servicesLink {
+    padding-right: 0rem;
+  }
+
 }
