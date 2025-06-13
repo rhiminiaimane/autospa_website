@@ -10,14 +10,14 @@ const HeroSection: React.FC = () => {
         </div>
         <div className={styles.heroDescription}>
           <p>
-            Votre destination de confiance pour le soin automobile <strong>haut de gamme</strong>.
+            Votre destination de confiance pour le soin automobile haut de gamme.
           </p>
         </div>
       </div>
 
       <div className={styles.imageContent}>
         <Image
-          src="/AutoSpaDetailingvf.png"
+          src="/AutoSpaDetailing2.png"
           alt="Car Detailing"
           width={800}
           height={600}
