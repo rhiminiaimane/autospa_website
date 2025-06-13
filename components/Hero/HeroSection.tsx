@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
 
       <div className={styles.imageContent}>
         <Image
-          src="/AutoSpaDetailing2.png"
+          src="/IMG3.png"
           alt="Car Detailing"
           width={800}
           height={600}
