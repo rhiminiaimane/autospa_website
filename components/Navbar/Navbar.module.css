@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 .navbar {
@@ -35,7 +36,7 @@
 }
 
 .logoImage {
-  height: 48px;
+  height: 55px;
   width: auto;
 }
 
@@ -101,7 +102,10 @@
 }
 
 .mainBrand {
-  white-space: nowrap;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem; /* Adjust as needed */
+  color: #f8ad19;  /* Or your preferred color */
+  letter-spacing: 1px;
 }
 
 .subBrand {
@@ -172,6 +176,10 @@
   .navbarHamburger.active span:nth-child(3) {
     transform: translateY(-1px) rotate(-45deg);
     background-color: black;
+  }
+  .mainBrand{
+    font-weight: 700;
+    font-size: 1.7rem; /* Adjust as needed */
   }
 }
 

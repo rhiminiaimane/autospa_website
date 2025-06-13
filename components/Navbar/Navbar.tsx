@@ -45,15 +45,17 @@ const Navbar: React.FC = () => {
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbarLogo}>
         <Image 
-          src="/logos/logo.png" 
+          src="/logos/logo1.png" 
           alt="AutoSpa Logo" 
           className={styles.logoImage} 
           width={50} 
           height={50} 
         />
         <span className={styles.brandName}>
-          <span className={styles.mainBrand}>Auto Spa</span> 
-          <span className={styles.subBrand}>Detailing</span>
+          <span className={styles.mainBrand}>Masters Of Detailing</span> 
+          {/*
+          <span className={styles.subBrand}></span>
+          */}
         </span>
       </div>
       
