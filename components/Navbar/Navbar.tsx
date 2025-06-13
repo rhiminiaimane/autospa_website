@@ -55,7 +55,7 @@ const Navbar: React.FC = () => {
         />
 
         <span className={styles.brandName}>
-          <span className={styles.mainBrand}>AutoSpa</span> 
+          <span className={styles.mainBrand}>Auto Spa</span> 
           <span className={styles.subBrand}>Detailing</span>
         </span>
       </div>
@@ -68,12 +68,17 @@ const Navbar: React.FC = () => {
           ACCUEIL
         </Link>
         <Link href="/services" onClick={() => setIsOpen(false)}>
-          SERVICES
+          NANO CERAMIC
+        </Link>
+        <Link href="/galerie" onClick={() => setIsOpen(false)}>
+          PPF
+        </Link>
+        <Link href="/services" onClick={() => setIsOpen(false)}>
+          PACKS
         </Link>
         <Link href="/galerie" onClick={() => setIsOpen(false)}>
           GALERIE
         </Link>
-
         <Link href="/#contact" onClick={handleContactClick}>
           CONTACT
         </Link>
