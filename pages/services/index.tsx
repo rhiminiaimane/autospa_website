@@ -57,7 +57,7 @@ const Services: React.FC = () => {
               <>
                 <h2>Revêtement Céramique 9H</h2>
                 <p>
-                  Notre revêtement céramique 9H offre une protection longue durée contre les agressions extérieures :<br/>UV, pluies acides, pollution, résine et fientes d'oiseaux. 
+                  Notre revêtement céramique 9H offre une protection longue durée contre les agressions extérieures :<br/>UV, pluies acides, pollution, résine et fientes d&apos;oiseaux. 
                   Votre véhicule garde un aspect neuf et une brillance incomparable pendant des années.
                 </p>
                 <div className={styles.pricingContainer}>
@@ -84,7 +84,7 @@ const Services: React.FC = () => {
               <>
                 <h2>Film de Protection de Peinture (PPF)</h2>
                 <p>
-                  Le film de protection de peinture (PPF) est une solution physique ultra-résistante qui protège votre carrosserie contre les rayures, les éclats de gravillons, les impacts de portières et les agressions du quotidien. Invisible, auto-cicatrisant et durable, il préserve l’intégrité de votre peinture d’origine.
+                  Le film de protection de peinture (PPF) est une solution physique ultra-résistante qui protège votre carrosserie contre les rayures, les éclats de gravillons, les impacts de portières et les agressions du quotidien. Invisible, auto-cicatrisant et durable, il préserve l&apos;integrité de votre peinture d&apos;origine.
                 </p>
                 {/*
                 <div className={styles.pricingContainer}>
