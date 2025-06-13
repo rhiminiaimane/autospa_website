@@ -32,7 +32,6 @@ const Navbar: React.FC = () => {
   const handleContactClick = async () => {
     if (router.pathname !== '/') {
       await router.push('/');
-      // Wait for the navigation to complete
       setTimeout(() => {
         scrollToSection('#contact');
       }, 100);
@@ -45,7 +44,6 @@ const Navbar: React.FC = () => {
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.navbarLogo}>
-
         <Image 
           src="/logos/logo.png" 
           alt="AutoSpa Logo" 
@@ -53,7 +51,6 @@ const Navbar: React.FC = () => {
           width={50} 
           height={50} 
         />
-
         <span className={styles.brandName}>
           <span className={styles.mainBrand}>Auto Spa</span> 
           <span className={styles.subBrand}>Detailing</span>
@@ -67,13 +64,13 @@ const Navbar: React.FC = () => {
         }}>
           ACCUEIL
         </Link>
-        <Link href="/services" onClick={() => setIsOpen(false)}>
+        <Link href="/services?service=ceramic" onClick={() => setIsOpen(false)}>
           NANO CERAMIC
         </Link>
-        <Link href="/galerie" onClick={() => setIsOpen(false)}>
+        <Link href="/services?service=ppf" onClick={() => setIsOpen(false)}>
           PPF
         </Link>
-        <Link href="/services" onClick={() => setIsOpen(false)}>
+        <Link href="/packs" onClick={() => setIsOpen(false)}>
           PACKS
         </Link>
         <Link href="/galerie" onClick={() => setIsOpen(false)}>
@@ -82,7 +79,6 @@ const Navbar: React.FC = () => {
         <Link href="/#contact" onClick={handleContactClick}>
           CONTACT
         </Link>
-
       </div>
 
       <div 
