@@ -4,24 +4,24 @@ import styles from './Hero.module.css';
 const HeroSection: React.FC = () => {
   return (
     <section className={styles.container}>
-      <div className={styles.hero}>
-      <div className={styles.heroContent}>
-        <p className={styles.heroTitle}><strong>Bienvenue</strong> à AutoSpa Detailing</p><br />
-        <p className={styles.heroDescription}>
-            Nous offrons des services de detailing <strong>haut de gamme</strong><br /> 
-          Protection céramique, film de protection de peinture (PPF), restauration du cuir et autres services sur mesure.
-        </p>
-        <div className={styles.heroRating}>
-          <Image 
-            src="/icons/google-reviews.png"
-            alt="Google Logo"
-            width={110}
-            height={20}
-            style={{ marginLeft: '2px' }}
-          />
-           5 (parmi +40 avis)
+      <div className={styles.textContent}>
+        <div className={styles.heroTitle}>
+          <p>Bienvenue chez <br/><strong>Auto Spa Detailing</strong></p>
+        </div>
+        <div className={styles.heroDescription}>
+          <p>
+            Votre destination de confiance pour le soin automobile <strong>haut de gamme</strong>.
+          </p>
         </div>
       </div>
+
+      <div className={styles.imageContent}>
+        <Image
+          src="/AutoSpaDetailingvf.png"
+          alt="Car Detailing"
+          width={800}
+          height={600}
+        />
       </div>
     </section>
   );
