@@ -1,7 +1,9 @@
 import Head from 'next/head';
 import AboutSection from '@/components/About/AboutSection';
 import HeroSection from '@/components/Hero/HeroSection';
-import ServicesSection from '@/components/Packs/PackSection';
+import PackSection from '@/components/Packs/PackSection';
+import ServiceSection from '@/components/Services/ServiceSection';
+
 import ReviewsSection from '@/components/Reviews/ReviewsSection';
 import Footer from '@/components/Footer/Footer';
 import React from 'react';
@@ -18,22 +20,23 @@ const Home: React.FC = () => {
         <meta name="author" content="Auto Spa Detailing" />
 
         {/* Open Graph */}
-        <meta property="og:title" content="Premium Car Detailing Services" />
-        <meta property="og:description" content="High-end car detailing and polishing. Serving English and French-speaking customers." />
+        <meta property="og:title" content="Services de Detailing Auto de Luxe | AutoSpa Detailing" />
+        <meta property="og:description" content="Des services professionnels de detailing automobile avec un service bilingue." />
         <meta property="og:url" content="https://autospa-website.vercel.app/" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+        <meta property="og:image" content="https://autospa-website.vercel.app/og-image.jpg" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Premium Car Detailing Services" />
-        <meta name="twitter:description" content="Make your car shine again. Bilingual car detailing services." />
-        <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+        <meta name="twitter:title" content="Services de Detailing Auto de Luxe | AutoSpa Detailing" />
+        <meta name="twitter:description" content="Des services professionnels de detailing automobile avec un service bilingue." />
+        <meta name="twitter:image" content="https://autospa-website.vercel.app/og-image.jpg" />
       </Head>
       <div>
         <HeroSection />
         <AboutSection />
-        <ServicesSection />
+        <ServiceSection />
+        <PackSection />
         <ReviewsSection />
       </div>
       

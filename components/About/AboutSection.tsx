@@ -3,19 +3,13 @@ import styles from './AboutSection.module.css';
 const AboutSection: React.FC = () => {
   return (
     <section className={styles.aboutSection}>
-      <h2 className={styles.aboutTitle}>A propos de AutoSpa</h2>
+      <h2 className={styles.aboutTitle}>Qui sommes nous ?</h2>
       <div className={styles.centerText}>
-        <p className={styles.aboutHeading}>
-            <strong className={styles.highlight}>AutoSpa Detailing</strong>, votre expert en detailing<br/> automobile à Diyar Tanjah,<br/> <strong className={styles.highlight}>Tanger</strong>, MA !
-        </p>
-        <p className={styles.aboutDescription}>
-          Spécialistes en <strong className={styles.highlight}>protection céramique</strong>, film <strong className={styles.highlight}>PPF</strong>, correction de peinture et <strong className={styles.highlight}>lavage premium</strong>, nous sublimons votre véhicule.<br/>
-          Membre officiel de <strong className={styles.highlight}>@thedetailingclub.official</strong>, nous assurons un travail de qualité avec une attention minutieuse aux détails.
-            {/*
-            Nous sommes spécialisés dans une <strong className={styles.highlight}>gamme complète</strong> de services<br/> pour sublimer votre véhicule : protection céramique, application de film PPF,<br/> correction de peinture et lavage premium.<br/>
-            Membre officiel de <a href="https://thedetailingclub.official" className={`${styles.link} ${styles.highlight}`}>@thedetailingclub.official</a>, nous garantissons un travail de qualité supérieure avec une <strong className={styles.highlight}>attention méticuleuse</strong> aux détails.
-             */}
-        </p>
+        <strong className={styles.highlight}>Auto Spa Detailing, c’est une équipe passionnée par l’automobile, dédiée à sublimer et protéger votre véhicule.</strong><br/>
+        <br />
+        <div className={styles.aboutDescription}>
+            <p>Grâce à des technologies de pointe comme <strong className={styles.highlight2}>le revêtement céramique 🚗, la correction de peinture ✨, ou encore la pose de films de protection PPF 🛡️</strong>, nous garantissons à votre véhicule une protection durable et une apparence irréprochable.<br/>Chaque intervention est réalisée avec le plus grand soin, dans le respect des spécificités de chaque voiture et des attentes de son propriétaire.</p>
+        </div>
       </div>
     </section>
   );

@@ -22,12 +22,21 @@
   font-weight: 700;
 }
 
+
+.aboutDescription {
+  color: #000000; /* Black color for the description text */
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
 /* Add media query for mobile devices */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .aboutTitle {
     text-align: center;
     margin: 0;
     padding: 0 1rem;
+  }
+  .aboutDescription {
+    font-size: 0.95rem;
   }
 }
 
@@ -38,16 +47,16 @@
   margin-bottom: 1.5rem;
 }
 
-.aboutDescription {
-  color: #000000; /* Black color for the description text */
-  font-size: 1.2rem;
-  line-height: 1.3;
-  margin-bottom: 1rem;
-}
 .highlight {
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+.highlight2 {
     color: #014AAC;
     font-weight: bold;
 }
+
 
 .link {
   color: #000000;
