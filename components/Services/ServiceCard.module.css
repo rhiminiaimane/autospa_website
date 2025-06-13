@@ -52,7 +52,7 @@
 .cardTitle {
   margin: 0 0 1rem 0;
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: #014AAC;
   margin-bottom: 0.5rem;
   text-transform: capitalize;
@@ -60,6 +60,7 @@
 }
 
 .cardDescription {
+  font-size: 0.95rem;
   margin: 0;
   line-height: 1.6;
   font-size: 0.95rem;

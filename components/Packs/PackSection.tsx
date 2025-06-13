@@ -41,7 +41,7 @@ const PackSection: React.FC = () => {
         ))}
       </div>
       <div className={styles.linkContainer}>
-        <Link href="/services" className={styles.servicesLink}>
+        <Link href="/packs" className={styles.servicesLink}>
           Voir plus de details 
           <Image 
             src="/icons/circle-arrow.png" 

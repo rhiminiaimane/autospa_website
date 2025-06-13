@@ -77,7 +77,7 @@ const packs = [
   },
 ];
 
-const Services: React.FC = () => {
+const Packs: React.FC = () => {
   const handleWhatsAppClick = (packTitle: string) => {
     const message = `Bonjour Auto Spa Detailing, je souhaite réserver le ${packTitle}.`;
     const whatsappUrl = `https://wa.me/+212639607843?text=${encodeURIComponent(message)}`;
@@ -147,4 +147,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default Packs;
