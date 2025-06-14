@@ -40,6 +40,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
                       alt="Instagram Icon"
                       width={20}
                       height={20}
+                      className={styles.contactIcon}
                     />
                   </span>
                   <Link href="https://www.instagram.com/auto_spa_detailing_sarl" target="_blank" className={styles.contactLink}>

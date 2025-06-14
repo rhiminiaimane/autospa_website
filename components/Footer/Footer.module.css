@@ -11,6 +11,18 @@
   align-items: center;
   flex-direction: column;
 }
+.contactIcon {
+  width: 36px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .contactIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 
 .footerContainer {
   width: 100%;

@@ -2,9 +2,9 @@
 
 /* Main Container */
 .container {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 2rem;
+  display: flex;
+  align-items: center;   /* vertical centering */
+  justify-content: space-between; /* or center, as needed */
   padding: 2rem;
   margin-top: 6rem;
   background: linear-gradient(to top, #f5f5f5, #ffffff);
@@ -15,10 +15,10 @@
 .textContent {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center; /* vertical centering within its flex item */
+  height: 100%;            /* ensure it takes full height of parent */
   gap: 2rem;
   padding: 2rem;
-  padding-left: 4.5rem;
   color: #000;
 }
 
@@ -41,7 +41,7 @@
 
 /* Image Container (fixed for responsive image fill) */
 .imageContent {
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   border-radius: 24px;
   margin: 0 auto; /* Add this to center the container */

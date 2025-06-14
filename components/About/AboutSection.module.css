@@ -8,10 +8,8 @@
 .aboutContent {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 30px;
-  margin: 0 auto;
-  margin-left: 6rem;
+  margin: 0rem 4rem;
 }
 
 .aboutImage {
@@ -29,11 +27,16 @@
 .aboutText {
   flex: 1;
   text-align: left;
+  display: flex;          /* Ajouté */
+  justify-content: center; /* Pour centrer horizontalement */
+  align-items: center;     /* Pour centrer verticalement */
 }
+
+
 
 .centerText{
   padding: 1rem 1rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
@@ -41,7 +44,6 @@
 .aboutTitle {
   color: #f8ad19;
   font-size: 1.75rem;
-  margin: 0rem 2rem;
   font-family: 'Montserrat';
   padding-left: 4rem;
   font-weight: 700;
