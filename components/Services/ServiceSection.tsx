@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ServiceCard from './ServiceCard';
 import styles from './Services.module.css';
+import Reveal from '../ScrollOnReveal/Reveal'; // Assuming you have a Reveal component for animations
 
 const services = [
     {
@@ -19,7 +20,10 @@ const services = [
 const ServiceSection: React.FC = () => {
   return (
     <section className={styles.services}>
+      <Reveal direction="left">
       <h2 className={styles.servicesTitle}>Notre Services</h2>
+      
+
       <Link href="/services">
         <div className={styles.cardsContainer}>
           {services.map((service, index) => (
@@ -32,6 +36,7 @@ const ServiceSection: React.FC = () => {
           ))}
         </div>
       </Link>
+      </Reveal>
       <div className={styles.linkContainer}>
         <Link href="/services" className={styles.servicesLink}>
           Voir plus de details 

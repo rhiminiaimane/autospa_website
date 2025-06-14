@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import ReviewCard from './ReviewCard';
 import styles from './ReviewsSection.module.css';
+import Reveal from '../ScrollOnReveal/Reveal';
 
 interface Review {
   author: string;
@@ -88,6 +89,7 @@ const ReviewsSection: React.FC = () => {
 
   return (
     <section className={styles.reviews}>
+      <Reveal direction="left">
       <h2 className={styles.reviewsTitle}>Avis</h2>
       <div className={styles.sliderContainer}>
         <button
@@ -128,6 +130,7 @@ const ReviewsSection: React.FC = () => {
           />
         </button>
       </div>
+      </Reveal>
       <div className={styles.pagination}>
         {Array.from({ length: totalPages }).map((_, index) => (
           <span

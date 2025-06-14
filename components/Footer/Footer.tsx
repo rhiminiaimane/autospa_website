@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './Footer.module.css';
+import Reveal from '../ScrollOnReveal/Reveal';
 
 interface FooterProps {
   id?: string;
@@ -9,6 +10,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ id }) => {
   return (
     <footer id={id} className={styles.footer}>
+      <Reveal direction="down">
       <div className={styles.footerContainer}>
         <div className={styles.contentWrapper}>
           {/* Map Section */}
@@ -95,6 +97,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
           </div>
         </div>
       </div>
+      </Reveal>
     </footer>
   );
 };

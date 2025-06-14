@@ -1,0 +1,26 @@
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.left {
+  transform: translateX(-50px);
+}
+
+.reveal.right {
+  transform: translateX(50px);
+}
+
+.reveal.top {
+  transform: translateY(-50px);
+}
+
+.reveal.bottom {
+  transform: translateY(50px);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}

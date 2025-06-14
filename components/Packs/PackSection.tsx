@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import ServiceCard from './PackCard';
 import styles from './PackSection.module.css';
+import Reveal from '../ScrollOnReveal/Reveal';
 
 const packs = [
   {
@@ -29,6 +30,7 @@ const packs = [
 const PackSection: React.FC = () => {
   return (
     <section className={styles.services}>
+      <Reveal direction="left">
       <h2 className={styles.servicesTitle}>Notre Packs</h2>
       <div className={styles.cardsContainer}>
         {packs.map((service, index) => (
@@ -40,6 +42,7 @@ const PackSection: React.FC = () => {
           />
         ))}
       </div>
+      </Reveal>
       <div className={styles.linkContainer}>
         <Link href="/packs" className={styles.servicesLink}>
           Voir plus de details 
