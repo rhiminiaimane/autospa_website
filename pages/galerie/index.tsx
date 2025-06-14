@@ -66,31 +66,34 @@ const Galerie: React.FC = () => {
   };
 
   const handleTouchEnd = () => {
-  const swipeDistance = touchStart - touchEnd;
-  const minSwipeDistance = 50;
+    // Prevent swipe if only one image in the category
+    if (filteredItems.length <= 1) return;
 
-  if (Math.abs(swipeDistance) > minSwipeDistance) {
-    const currentIndex = galleryItems.findIndex(item => item.id === selectedImage.id);
-    let newIndex;
+    const swipeDistance = touchStart - touchEnd;
+    const minSwipeDistance = 50;
 
-    if (swipeDistance > 0) {
-      // Swipe left
-      setSlideDirection('left');
-      newIndex = currentIndex + 1 >= filteredItems.length ? 0 : currentIndex + 1;
-    } else {
-      // Swipe right
-      setSlideDirection('right');
-      newIndex = currentIndex - 1 < 0 ? filteredItems.length - 1 : currentIndex - 1;
+    if (Math.abs(swipeDistance) > minSwipeDistance) {
+      const currentIndex = filteredItems.findIndex(item => item.id === selectedImage.id);
+      let newIndex;
+
+      if (swipeDistance > 0) {
+        // Swipe left
+        setSlideDirection('left');
+        newIndex = currentIndex + 1 >= filteredItems.length ? 0 : currentIndex + 1;
+      } else {
+        // Swipe right
+        setSlideDirection('right');
+        newIndex = currentIndex - 1 < 0 ? filteredItems.length - 1 : currentIndex - 1;
+      }
+
+      setSelectedImage(filteredItems[newIndex]);
+
+      // Reset slide direction after animation
+      setTimeout(() => {
+        setSlideDirection(null);
+      }, 300);
     }
-
-    setSelectedImage(filteredItems[newIndex]);
-    
-    // Reset slide direction after animation
-    setTimeout(() => {
-      setSlideDirection(null);
-    }, 300);
-  }
-};
+  };
 
   return (
     <div className={styles.container}>

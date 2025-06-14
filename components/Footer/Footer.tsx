@@ -10,7 +10,7 @@ interface FooterProps {
 const Footer: React.FC<FooterProps> = ({ id }) => {
   return (
     <footer id={id} className={styles.footer}>
-      <Reveal direction="down">
+      <Reveal direction="bottom">
       <div className={styles.footerContainer}>
         <div className={styles.contentWrapper}>
           {/* Map Section */}
