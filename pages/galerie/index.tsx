@@ -17,9 +17,9 @@ const galleryItems = [
   { id: 9, model: 'Dacia', Name: 'Dacia StepWay', image: '/cars/dacia.webp', alt: 'Dacia StepWay' },
   { id: 10, model: 'Dacia', Name: 'Dacia StepWay', image: '/cars/dacia2.webp', alt: 'Dacia StepWay' },
 
-  { id: 11, model: 'Audi', Name: 'Audi A3', image: '/cars/AudiA3.webp', alt: 'Audi A3' },
-  { id: 12, model: 'Audi', Name: 'Audi A3', image: '/cars/AudiA32.webp', alt: 'Audi A3' },
-  { id: 13, model: 'Audi', Name: 'Audi A3', image: '/cars/AudiA323.webp', alt: 'Audi A3' },
+  { id: 11, model: 'Audi', Name: 'Audi A3', image: '/cars/audiA3.webp', alt: 'Audi A3' },
+  { id: 12, model: 'Audi', Name: 'Audi A3', image: '/cars/audiA32.webp', alt: 'Audi A3' },
+  { id: 13, model: 'Audi', Name: 'Audi A3', image: '/cars/audiA323.webp', alt: 'Audi A3' },
 
   { id: 14, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes.webp', alt: 'Mercedes AMG GLE 63 S model' },
   { id: 15, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes2.webp', alt: 'Mercedes AMG GLE 63 S model' },

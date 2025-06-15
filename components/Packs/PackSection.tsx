@@ -13,7 +13,7 @@ const packs = [
   {
     title: 'Pack Platinum',
     description: "Un service plus approfondi avec désinfection intérieure et brillance carrosserie pour une propreté durable.",
-    imageUrl: '/cars/platinum-pack.avif',
+    imageUrl: '/cars/platinum-pack.jpg',
   },
   {
     title: 'Pack Diamond',
