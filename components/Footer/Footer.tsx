@@ -67,8 +67,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
                       height={20}
                     />
                   </span>
-                  Lundi - Vendredi: 9H - 19H<br/>
-                  Samedi: 10H - 18H
+                  Lundi - Samedi<br/>10H:30 - 20H<br/>
                 </p>
               </div>
                 <div className={styles.verticalDivider}></div>

@@ -7,8 +7,8 @@ const galleryItems = [
   { id: 2, model: 'Skoda', Name: 'Skoda Octavia', image: '/cars/skodaoctavia2.webp', alt: 'Skoda Octavia' },
 
   { id: 3, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/tailleXL.jpg', alt: 'Volkswagen Touareg' },
-  { id: 4, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/VolkswagenTouareg.webp', alt: 'Volkswagen Touareg' },
-  { id: 5, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/VolkswagenTouareg2.webp', alt: 'Volkswagen Touareg' },
+  { id: 4, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/VolkswagenTouareg.jpg', alt: 'Volkswagen Touareg' },
+  { id: 5, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/VolkswagenTouareg2.jpg', alt: 'Volkswagen Touareg' },
 
   { id: 6, model: 'Volkswagen', Name: 'Volkswagen Golf R', image: '/cars/GOLFR0.webp', alt: 'Volkswagen Golf R' },
   { id: 7, model: 'Volkswagen', Name: 'Volkswagen Golf R', image: '/cars/GOLFR.webp', alt: 'Volkswagen Golf R' },
@@ -25,7 +25,6 @@ const galleryItems = [
   { id: 15, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes2.webp', alt: 'Mercedes AMG GLE 63 S model' },
   { id: 16, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes3.webp', alt: 'Mercedes AMG GLE 63 S model' },
   { id: 17, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes4.webp', alt: 'Mercedes AMG GLE 63 S model' },
-
 
   { id: 18, model: 'BMW', Name: 'BMW M60', image: '/cars/bmw.webp', alt: 'BMW M60' },
   { id: 19, model: 'BMW', Name: 'BMW M60', image: '/cars/bmw3.webp', alt: 'BMW M60' },
@@ -45,7 +44,7 @@ const galleryItems = [
   { id: 28, model: 'Chevrolet', Name: 'Chevrolet Camaro', image: '/cars/ChevroletCamaro2.webp', alt: 'Chevrolet Camaro' },
   { id: 29, model: 'Chevrolet', Name: 'Chevrolet Camaro', image: '/cars/ChevroletCamaro1.webp', alt: 'Chevrolet Camaro' },
 
-  { id: 30, model: 'BMW', Name: 'BMW', image: '/cars/bmww.jpg', alt: 'BMW' },
+  { id: 30, model: 'BMW', Name: 'BMW', image: '/cars/platinum-pack.jpg', alt: 'BMW' },
 ];
 
 const Galerie: React.FC = () => {
@@ -139,15 +138,15 @@ const Galerie: React.FC = () => {
         onTouchEnd={handleTouchEnd}
       >
         <Image
-  src={selectedImage.image}
-  alt={selectedImage.alt}
-  width={600}
-  height={400}
-  className={`${styles.image} ${
-    slideDirection === 'left' ? styles.slideLeft : 
-    slideDirection === 'right' ? styles.slideRight : ''
-  }`}
-/>
+          src={selectedImage.image}
+          alt={selectedImage.alt}
+          width={600}
+          height={400}
+          className={`${styles.image} ${
+            slideDirection === 'left' ? styles.slideLeft : 
+            slideDirection === 'right' ? styles.slideRight : ''
+          }`}
+        />
         <h3 className={styles.imageTitle}>{selectedImage.Name}</h3>
       </div>
       <div className={styles.sidebar}>

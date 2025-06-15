@@ -30,13 +30,14 @@
 }
 
 .image {
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;  /* for 4/3 ratio */
   object-fit: cover;
   border-radius: 24px;
   transition: all 0.3s ease-out;
   will-change: transform;
 }
+
 
 /* Add these new classes for slide animations */
 .slideLeft {
@@ -112,6 +113,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block; /* ADD THIS */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.06) 0px 4px 14px;
 }
