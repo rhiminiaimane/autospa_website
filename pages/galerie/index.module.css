@@ -17,11 +17,10 @@
 
 .mainImage {
   flex: 2;
-  min-width: 300px;
-  width: 680px;
-  height: 400px;
-  position: relative;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;  /* Ensure square aspect ratio */
+  width: 100%;
+  max-width: 520px;      /* Increased from 400px */
+  min-width: 320px;      /* Increased from 250px */
   display: flex;
   flex-direction: column;
   gap: 1rem;
