@@ -77,6 +77,9 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    margin-top: 2rem; /* Reduce or set to 0 if you want no gap */
+  }
   .heroTitle {
     font-size: 1.8rem;
   }
@@ -87,15 +90,15 @@
 }
 
 @media (max-width: 480px) {
+  .container {
+    margin-top: 25px; /* Remove gap on very small screens */
+    min-height: 80vh;
+  }
   .heroTitle {
     font-size: 1.6rem;
   }
 
   .heroDescription {
     font-size: 0.95rem;
-  }
-
-  .container {
-    min-height: 80vh;
   }
 }
