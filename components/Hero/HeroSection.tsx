@@ -1,14 +1,25 @@
-import Image from 'next/image';
 import styles from './Hero.module.css';
 import Reveal from '../ScrollOnReveal/Reveal'; // Assuming you have a Reveal component for animations
 
 const HeroSection: React.FC = () => {
   return (
     <section className={styles.container}>
-      <Reveal direction="left"> 
+      <video
+        className={styles.videoBackground}
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/hero_video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className={styles.videoOverlay}></div> {/* Add this line */}
+      
+      <Reveal direction="left">
         <div className={styles.textContent}>
           <div className={styles.heroTitle}>
-            <p>Bienvenue chez <br/><strong>Auto Spa Detailing</strong></p>
+            <p>Bienvenue chez <br/>Auto Spa Detailing</p>
           </div>
           <div className={styles.heroDescription}>
             <p>
@@ -17,17 +28,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </Reveal>
-
-      <Reveal direction="right"> 
-        <div className={styles.imageContent}>
-          <Image
-            src="/IMG3.png"
-            alt="Car Detailing"
-            width={800}
-            height={600}
-          />
-        </div>
-      </Reveal>
+      
     </section>
   );
 };

@@ -25,7 +25,7 @@ const AboutSection: React.FC = () => {
             
             <div className={styles.centerText}>
               <p className={styles.highlight}>
-                Auto Spa Detailing, c’est une équipe passionnée par l’automobile, dédiée à sublimer et protéger votre véhicule.
+                <strong>Auto Spa Detailing</strong>, c’est une équipe passionnée par l’automobile, dédiée à sublimer et protéger votre véhicule.
               </p>
               <br />
               <div className={styles.aboutDescription}>
