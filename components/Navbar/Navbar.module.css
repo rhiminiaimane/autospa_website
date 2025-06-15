@@ -73,7 +73,7 @@
 }
 
 .navbarLinks a:hover::after {
-  width: 100%;
+  width: 0; /* Remove underline on hover */
 }
 
 .navbarHamburger {
@@ -124,9 +124,28 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 1.2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.3rem;
+    
   }
-  
+
+  .navbarLogo {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .brandName {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .scrolled {
     padding: 0.8rem 1.5rem;
   }
@@ -162,6 +181,7 @@
 
   .navbarHamburger {
     display: flex;
+    margin-left: auto;
   }
 
   .navbarHamburger.active span:nth-child(1) {
